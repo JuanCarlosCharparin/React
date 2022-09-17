@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Navbar {
+  display: flex ;
+  justify-content: space-around;
+  background-image: linear-gradient(#3c33ff, #33daff);
+  opacity: 85%;
+  font-size: 20;
+  margin: 30;
+}
+
+.Productos{
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+.Titulo {
+  margin-left: 5px;
+}
+
+.Cont{
+  margin-left: 20px;
+}
+
+.botones {
+  background-color:  #a3e4d7;
+  border-radius: 10%;
+  margin-right: 10px;
+  border-color: darkcyan;
+  opacity: 80%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#carrito {
+  margin-left: 100px;
+  color: #3c33ff;
+  
+}
+
+.botones:hover{
+  background-color: #33a2ff;
+}
+
+.botones {cursor: pointer;}
+
