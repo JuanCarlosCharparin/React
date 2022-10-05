@@ -67,12 +67,17 @@
   border-color: darkcyan;
   opacity: 80%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;
 }
 
-#carrito {
-  margin-left: 100px;
-  color: #3c33ff;
-  
+.cart {
+  margin-right: 20px;
+  height: 50px;
+}
+
+.num {
+  margin-top: -40px;
+  margin-right: -80px;
 }
 
 .botones:hover{
@@ -80,4 +85,77 @@
 }
 
 .botones {cursor: pointer;}
+
+.cont {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cont-operacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  border: 1px solid  #b2babb ;
+  height: 30px;
+  width: 200px;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 5%;
+}
+
+.botonMas{
+  margin-right: 60px;
+  color: #334eff;
+  background-color: white;
+  height: 30px;
+  border: none;
+}
+.botonMas:hover{
+  color: #33a2ff;
+}
+.botonMas {cursor: pointer;}
+.botonMas:active{
+  color: #4633ff;
+}
+
+.botonMenos{
+  margin-left: 60px;
+  color: #334eff;
+  background-color: white;
+  height: 30px;
+  border: none;
+}
+.botonMenos:hover{
+  color: #33a2ff;
+}
+.botonMenos {cursor: pointer;}
+.botonMenos:active{
+  color: #4633ff;
+}
+
+.botonAdd {
+  margin-top: 100px;
+  border: 1px solid #334eff;
+  height: 30px;
+  width: 200px;
+  border-radius: 5%;
+  background-color: white;
+  color: #334eff;
+}
+
+.botonAdd:hover{
+  color: #33a2ff;
+  border: 1px solid #33a2ff;
+}
+
+.botonAdd {cursor: pointer;}
+.botonAdd:active{
+  color: #4633ff;
+  border-color: #4633ff;
+}
 
