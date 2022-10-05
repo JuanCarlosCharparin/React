@@ -1,19 +1,36 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-
+import Count from './components/ItemCount.js/ItemCount';
+import MercadoLibre from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
+
+  const handleOnAdd = () => {
+    console.log('agregar al carrito')
+  }
+
   return (
     <div className="App">
-      <Navbar/>
+      <BrowserRouter>
+        <Navbar/>
 
-      <ItemListContainer greeting={'Bienvendios al e-commerce'}/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          
+          <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
+        </Routes>
+        
+      </BrowserRouter>
+      
+      {/* <MercadoLibre/> */}
+      {/* <ItemListContainer/> */}
 
-      <img style={{marginLeft: '1200px', marginTop: '-5000px'}} src='/images/carrito.svg'/>
-      0
-
+      
+      {/* <Count stock={'15'} onAdd={handleOnAdd} initial={0}/> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -28,6 +45,8 @@ function App() {
           Learn React
         </a>
       </header> */}
+
+      
     </div>
   );
 }
